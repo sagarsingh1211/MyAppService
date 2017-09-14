@@ -97,23 +97,5 @@ public class AddToCartController {
 	}
 
 }
-	/*
-	 * @RequestMapping(value = "/addToCartOrderDetails", method =
-	 * RequestMethod.POST)
-	 * 
-	 * @ResponseBody public Status addToCartOrder(@RequestBody String input) {
-	 * 
-	 * //security check
-	 * 
-	 * Status status = new Status(); status.setMessageCode(12131);
-	 * status.setMessage("Done"); return status; }
-	 * 
-	 * @RequestMapping(value = "/test", method = RequestMethod.GET)
-	 * 
-	 * @ResponseBody public Status test() {
-	 * 
-	 * Status status = new Status(); status.setMessageCode(12131);
-	 * status.setMessage("Done"); return status; }
-	 */
-
+	
 
