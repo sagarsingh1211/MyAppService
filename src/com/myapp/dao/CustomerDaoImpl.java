@@ -1,4 +1,4 @@
-package com.hungrybell.app.dao;
+package com.myapp.dao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Repository;
 
-import com.hungrybell.app.model.Customer;
+import com.myapp.model.Customer;
 
 @Repository
 public class CustomerDaoImpl implements CustomerDao {
@@ -39,7 +39,7 @@ public class CustomerDaoImpl implements CustomerDao {
 	public List<Customer> getCustomerList() throws Exception {
 		Session session = sessionFactory.openSession();
 		Query qry = session.createQuery("from Customer ");
-		List customerList = qry.list();
+		List<Customer> customerList = qry.list();
 		return customerList;
 	}
 
@@ -58,8 +58,7 @@ public class CustomerDaoImpl implements CustomerDao {
 	@Override
 	public boolean deleteCustomer(int id) throws Exception {
 		Session session = sessionFactory.openSession();
-		Query qry = session
-				.createQuery("delete from Customer where id = " + id);
+		Query qry = session.createQuery("delete from Customer where id = " + id);
 
 		int l = qry.executeUpdate();
 		if (l > 0) {

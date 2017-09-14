@@ -1,8 +1,8 @@
-package com.hungrybell.app.vo;
+package com.myapp.vo;
 
 public class CustomerVo {
+	
 	private int id;
-
 	private String name;
 	private String mailId;
 	private String address;

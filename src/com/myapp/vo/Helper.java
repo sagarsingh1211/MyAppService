@@ -1,6 +1,6 @@
-package com.hungrybell.app.vo;
+package com.myapp.vo;
 
-import com.hungrybell.app.model.Customer;
+import com.myapp.model.Customer;
 
 public class Helper {
 

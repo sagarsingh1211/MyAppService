@@ -1,4 +1,4 @@
-package com.hungrybell.app.model;
+package com.myapp.model;
 
 import java.io.Serializable;
 

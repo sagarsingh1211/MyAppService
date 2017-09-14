@@ -1,6 +1,7 @@
-package com.hungrybell.app.controller;
+package com.myapp.controller;
 
 import java.util.List;
+
 
 
 
@@ -12,10 +13,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.hungrybell.app.model.Customer;
-import com.hungrybell.app.service.CustomerService;
-import com.hungrybell.app.vo.CustomerVo;
-import com.hungrybell.app.vo.Helper;
+import com.myapp.model.Customer;
+import com.myapp.service.CustomerService;
+import com.myapp.vo.CustomerVo;
+import com.myapp.vo.Helper;
 
 @Controller
 public class AddToCartController {
@@ -54,7 +55,7 @@ public class AddToCartController {
 
 		return list;
 	}
-	@RequestMapping(value = "/updateCustomer", method = RequestMethod.POST)
+	@RequestMapping(value = "/updateCustomer", method = RequestMethod.PUT)
 	@ResponseBody
 	public Status updateCustomer(@RequestBody Customer customerVo) {
 		Status status = new Status();
@@ -95,7 +96,7 @@ public class AddToCartController {
 		return status;
 	}
 
-
+}
 	/*
 	 * @RequestMapping(value = "/addToCartOrderDetails", method =
 	 * RequestMethod.POST)
@@ -115,4 +116,4 @@ public class AddToCartController {
 	 * status.setMessage("Done"); return status; }
 	 */
 
-}
+

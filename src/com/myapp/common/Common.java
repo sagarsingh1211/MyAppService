@@ -1,4 +1,4 @@
-package com.hungrybell.app.common;
+package com.myapp.common;
 
 import java.util.Date;
 

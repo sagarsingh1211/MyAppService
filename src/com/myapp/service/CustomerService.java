@@ -1,8 +1,8 @@
-package com.hungrybell.app.service;
+package com.myapp.service;
 
 import java.util.List;
 
-import com.hungrybell.app.model.Customer;
+import com.myapp.model.Customer;
 
 public interface CustomerService {
 	public boolean addCustomer(Customer customer) throws Exception;

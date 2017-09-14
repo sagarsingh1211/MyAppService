@@ -1,4 +1,4 @@
-package com.hungrybell.app.controller;
+package com.myapp.controller;
 
 public class Status {
 	private int messageCode;

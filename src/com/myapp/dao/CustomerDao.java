@@ -1,8 +1,8 @@
-package com.hungrybell.app.dao;
+package com.myapp.dao;
 
 import java.util.List;
 
-import com.hungrybell.app.model.Customer;
+import com.myapp.model.Customer;
 
 public interface CustomerDao {
 	public boolean addCustomer(Customer customer) throws Exception;
