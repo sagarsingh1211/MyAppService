@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -73,9 +74,9 @@ public class AddToCartController {
 
 		return status;
 	}
-	@RequestMapping(value = "/deleteCustomer", method = RequestMethod.GET)
+	@RequestMapping(value = "/deleteCustomer/{id}", method = RequestMethod.DELETE)
 	@ResponseBody
-	public Status deleteCustomer(@RequestParam("id" )int id) {
+	public Status deleteCustomer(@PathVariable("id" )int id) {
 		Status status = new Status();
 		try {
 			boolean result=customerServiceImpl.deleteCustomer(id);
